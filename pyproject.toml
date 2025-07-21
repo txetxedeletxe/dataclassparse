@@ -1,0 +1,17 @@
+[project]
+name = "dataclassparse_txetx"
+version = "0.0.1"
+authors = [{name="Edu Vallejo Arginzoniz", email="txetxedeletxe@gmail.com" }]
+description = "This package contains the \"dataclassparse_txetx\" pure python module. This module enables defining command-line argument parsers based on the fields of a python dataclass. The module tries to implement most of the common-use functionality of the argparse module."
+readme = "README.md"
+requires-python = ">=3.10"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Operating System :: OS Independent",
+]
+license = "GPLv3"
+license-files = ["LICEN[CS]E*"]
+
+[build-system]
+requires = ["setuptools >= 77.0.3","wheel"]
+build-backend = "setuptools.build_meta"
