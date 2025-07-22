@@ -1,0 +1,17 @@
+Metadata-Version: 2.4
+Name: dataclassparse_txetx
+Version: 0.0.1
+Summary: The "dataclassparse_txetx" pure python module enables defining command-line argument parsers based on the fields of a python dataclass. The module tries to implement most of the common-use functionality of the argparse module.
+Author-email: Edu Vallejo Arginzoniz <txetxedeletxe@gmail.com>
+Project-URL: Homepage, https://github.com/txetxedeletxe/dataclassparse
+Project-URL: Issues, https://github.com/txetxedeletxe/dataclassparse/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Dynamic: license-file
+
+# dataclassparse
+The "dataclassparse_txetx" pure python module enables defining command-line argument parsers based on the fields of a python dataclass. The module tries to implement most of the common-use functionality of the argparse module.
+

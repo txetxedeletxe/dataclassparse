@@ -24,12 +24,18 @@ class SelfParsingDataclass:
         nested_dataclasses, nested_fields = {}, defaultdict(list)
         parser = argparse.ArgumentParser()
         for f in dataclasses.fields(cls):
+
+            if not f.init:
+                continue
             
             if issubclass(f.type,ConfigGroupDataclass):
                 nested_parser = parser.add_argument_group(title=f.type._config_group_title,description=f.type._config_group_description)
                 nested_dataclasses[f.name] = f.type
 
                 for nf in dataclasses.fields(f.type):
+                    if not nf.init:
+                        continue
+
                     SelfParsingDataclass._add_argument(nested_parser,nf)
                     nested_fields[f.name].append(nf.name)
 
