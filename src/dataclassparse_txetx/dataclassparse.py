@@ -15,7 +15,6 @@ class ConfigGroupDataclass:
     _config_group_description : typing.ClassVar[str | None] = None
 
 
-@dataclass
 class SelfParsingDataclass:
     @classmethod
     def parse_args(cls, args : Sequence[str] | None = None, namespace: None = None):
@@ -98,3 +97,4 @@ class SelfParsingDataclass:
                  f"--{field.name}" if field.kw_only else field.name,
                 **args
             )
+
